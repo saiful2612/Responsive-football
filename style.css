@@ -1,4 +1,10 @@
 
+ /**********************************
+
+            Global
+
+ ***********************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -8,6 +14,27 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
+
+
+button{
+    padding:10px 24px;
+    background: #E02C6D;
+    color:#ffffff;
+    border:none;
+}
+
+p{
+    color:  #6C6C6C;
+    font-size:16px;
+    font-weight:400;
+}
+
+
+/********************************************
+
+                Header-Portion
+
+***********************************************/
 
 Header{
     width:100%;
@@ -73,18 +100,14 @@ nav li a{
     transition: transform 2s ease-in-out;
 }
 
-button{
-    padding:10px 24px;
-    background: #E02C6D;
-    color:#ffffff;
-    border:none;
-}
 
-p{
-    color:  #6C6C6C;
-    font-size:16px;
-    font-weight:400;
-}
+ /***********************************************************
+ 
+                    Cart-Portion
+ 
+ *************************************************************/
+
+
 
 .cart{
     width:900px;
@@ -95,9 +118,7 @@ p{
 }
 
 .player-cart{
-    /* border:1px solid red; */
     width:260px;
-    /* height:380px; */
     padding:10px;
     box-shadow:0 0 10px #d3d3d3;
 }
@@ -108,25 +129,18 @@ p{
     color:#18191F;
 }
 
-
-
 .player img{
     width:100%;
-    /* width:300px; */
-    /* height:256px; */
 }
+
+/***********************************************************
+
+                  Highlights-Portion
+
+*************************************************************/
 
 .highlights{
     display:flex;
-}
-
-.match-day{
-    width:45%;
-    margin-left:20px;
-}
-
-.match-day img{
-    width:90%;
 }
 
 .highlights-content{
@@ -147,6 +161,23 @@ p{
     margin:0;
 }
 
+.match-day{
+    width:45%;
+    margin-left:20px;
+}
+
+.match-day img{
+    width:90%;
+}
+
+
+/*************************************************  
+
+                    Update-portion
+
+***************************************************/
+
+
 .update-portion{
     width:72%;
     margin:40px 0;
@@ -163,7 +194,6 @@ p{
 .archive{
     width:20%;
     margin:10px;
-    /* border:1px solid red; */
 }
 
 .fixture{
@@ -197,6 +227,12 @@ p{
     text-align:center;
     padding:5px 10px;
 }
+
+/*****************************************************************  
+
+                          Live-Portion
+
+********************************************************************/
 
 .live-telecast{ 
     width:65%;;
@@ -239,6 +275,17 @@ p{
     transform: scale(1.2);
 }
 
+/****************************************************************** 
+
+                           Footer-Portion
+
+*******************************************************************/
+
+
+footer{
+    display:flex;
+   align-items:center;
+}
 
 .footer{
     margin:40px  400px;
@@ -250,10 +297,7 @@ p{
     width:70%;
 }
 
-footer{
-    display:flex;
-   align-items:center;
-}
+
 .icon-tray{
     margin:20px 0;
 }
@@ -272,7 +316,21 @@ footer{
 }
 
 
+/*********************************************************************
+
+                    Mobile Devices 
+
+**********************************************************************/
+
+
 @media only screen and (max-width:688px){
+
+
+    /****************************** 
+    
+        Header-Portion & Hightlights-portion
+    
+    ******************************/
 
     nav, 
     nav ul,
@@ -287,7 +345,10 @@ footer{
         flex-direction:column;
         text-align:center;
         align-items:center;
-        /* justify-content:center; */
+    }
+
+    nav{
+        margin-left:0;
     }
 
     nav ul{
@@ -316,14 +377,12 @@ footer{
         margin-left:0;
     }
 
-    .logo img{
-        width:100%;
-        text-align:center;
-    }
 
-    nav{
-        margin-left:0;
-    }
+    /************************************  
+    
+            Cart-Portion
+    
+    **************************************/
 
     .cart{
         width:100%;
@@ -337,16 +396,28 @@ footer{
         width:95%;
     }
 
-
-
     .player img{
         width:100%;
     }
+
+    /*************************************  
+    
+            Highlights-Portion
+    
+    **************************************/
 
     .info{
         margin-left:0;
         margin-bottom:20px;
     }
+
+
+
+    /*************************************  
+    
+            Update-Portion
+    
+    ***************************************/
 
     .update-portion{
         display:flex;
@@ -389,6 +460,13 @@ footer{
     }
 
 
+    /****************************  
+    
+            Live-portion
+    
+    *****************************/
+
+
     .live-telecast{ 
         display:flex;
         width:100%;
@@ -399,8 +477,6 @@ footer{
     .live-telecast-image{
         width:100%;
     }
-
-
 
     .live-telecast-image img{
         width:100%;
@@ -415,8 +491,20 @@ footer{
         justify-content:center;
     }
 
+
+    /*****************************  
+    
+            Footer-Portion
+    
+    ******************************/
+
     .footer{
         width:50%;
+    }
+
+    .logo img{
+        width:100%;
+        text-align:center;
     }
 
 
