@@ -214,6 +214,7 @@ p{
 
 .live-telecast-image img{
     width:100%;
+    transition: all .95s;
 }
 
 .live-telecast-button{
@@ -234,7 +235,7 @@ p{
     color:#00a9ce;
 }
 
-.live-telecast:hover .live-telecast-image{
+.live-telecast:hover .live-telecast-image img{
     transform: scale(1.2);
 }
 
