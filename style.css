@@ -147,6 +147,97 @@ p{
     margin:0;
 }
 
+.update-portion{
+    width:72%;
+    margin:40px 0;
+    margin-left:185px;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    box-shadow:0 0 10px #d3d3d3;
+}
+
+
+.fixture,
+.news,
+.archive{
+    width:20%;
+    margin:10px;
+    /* border:1px solid red; */
+}
+
+.fixture{
+    border:1px soild #d3d3d3;
+}
+
+.fixture:hover{
+    color:#00a9ce;
+    box-shadow:0 0 1px #00a9ce;
+}
+
+.news{
+    background:#00a9ce;
+    color:#ffffff;
+}
+
+.archive{
+    background:#ffffff;
+    color:#000000;
+    border:1px solid #d3d3d3;
+}
+
+.archive:hover{
+    background:#000000;
+    color:#ffffff;
+}
+
+.fixture h3,
+.news h3,
+.archive h3{
+    text-align:center;
+    padding:5px 10px;
+}
+
+.live-telecast{ 
+    width:65%;;
+    margin: 40px 0 40px 250px;
+    display:flex;
+    position:relative;
+    overflow:hidden;
+}
+
+.live-telecast-image{
+    width:70%;
+    position:relative;
+    overflow:hidden;
+}
+
+.live-telecast-image img{
+    width:100%;
+}
+
+.live-telecast-button{
+    width:25%;
+    background:#00a9ce;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.telecast-button{
+    margin:20px 0;
+}
+
+.telecast-button:hover{
+    background:#000000;
+    color:#00a9ce;
+}
+
+.live-telecast:hover .live-telecast-image{
+    transform: scale(1.2);
+}
+
 
 .footer{
     margin:40px  400px;
@@ -242,7 +333,7 @@ footer{
     }
 
     .player-cart{
-        width:100%;
+        width:95%;
     }
 
 
@@ -256,6 +347,72 @@ footer{
         margin-bottom:20px;
     }
 
+    .update-portion{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-left:0;
+        width:90%;
+    }
+
+    .fixture,
+    .news,
+    .archive{
+    width:70%;
+    margin:10px;
+    }
+
+    .fixture{
+        border:1px soild #d3d3d3;
+    }
+    
+    .fixture:hover{
+        color:#00a9ce;
+        box-shadow:0 0 1px #00a9ce;
+    }
+    
+    .news{
+        background:#00a9ce;
+        color:#ffffff;
+    }
+    
+    .archive{
+        background:#ffffff;
+        color:#000000;
+        border:1px solid #d3d3d3;
+    }
+    
+    .archive:hover{
+        background:#000000;
+        color:#ffffff;
+    }
+
+
+    .live-telecast{ 
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        margin-left:0;
+    }
+
+    .live-telecast-image{
+        width:100%;
+    }
+
+
+
+    .live-telecast-image img{
+        width:100%;
+    }
+
+    .live-telecast-button{
+        width:100%;
+        background:#00a9ce;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
 
     .footer{
         width:50%;
