@@ -40,6 +40,7 @@ nav li a{
 
 .header-content{
     display:flex;
+    overflow:hidden;
 }
 
 .header-content-info{
@@ -57,13 +58,19 @@ nav li a{
 .header-content-image{
     width:50%;
     padding-bottom:20px;
+    position:retive;
+    overflow:hidden;
 }
-
-
 
 .header-content-image img{
     width:80%;
     margin-left:100px;
+}
+
+
+.header-content:hover .header-content-image{
+    transform:scale(1.1) rotate(5deg);
+    transition: transform 2s ease-in-out;
 }
 
 button{
@@ -148,12 +155,28 @@ p{
 }
 
 .logo img{
-    width:50%;
+    width:70%;
 }
 
 footer{
     display:flex;
    align-items:center;
+}
+.icon-tray{
+    margin:20px 0;
+}
+
+.icon-body{
+    padding:5px;
+    border-radius:50%;
+    background: #969BAB;
+    opacity:.3;
+    margin:2px;
+
+}
+
+.footer h6{
+    font-size:16px;
 }
 
 
@@ -239,5 +262,11 @@ footer{
     }
 
 
+
+}
+
+
+
+@media only screen and (max-width:900px){
 
 }
